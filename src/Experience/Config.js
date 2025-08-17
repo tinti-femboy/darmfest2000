@@ -14,7 +14,7 @@ export default class Config
          * Video Settings
          */
         this.postProcessingEnabled = true   // Enable post processing effects
-        this.pixelRatioFactor = 0.4           // Factor to reduce pixel ratio for retro resolution, raise >1 for SSAA
+        this.pixelRatioFactor = 0.5           // Factor to reduce pixel ratio for retro resolution, raise >1 for SSAA
         this.antialiasingSamples = 0        // Number of samples for MSAA, 0 for no MSAA
         this.RGBShiftDistance = 0.01        // Distance for RGB shift effect, 0.01 is a good value
         
