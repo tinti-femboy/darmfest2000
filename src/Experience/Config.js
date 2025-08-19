@@ -24,6 +24,11 @@ export default class Config
         this.sceneDepth = 200               // Depth of the synthwave scene
         this.particleCount = 10000         // Number of particles in the scene
         this.sunBrightness = 0.5            // Brightness of the sun
+
+        /**
+         * Darmfest Settings
+         */
+        this.darmfestDate = 1758380400000 // date for Darmfest event
     }
 
 }

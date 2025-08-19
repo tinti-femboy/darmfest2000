@@ -100,7 +100,6 @@ export default class PostProcessingEffectComposer
         // Film Pass
         this.instance.addPass(this.filmPass.instance)
         this.filmPass.instance.enabled = true
-        console.log(this.filmPass.instance.uniforms)
         this.filmPass.instance.uniforms['intensity'].value = 1; // Noise intensity
         this.filmPass.instance.uniforms['grayscale'].value = false; // Grayscale effect
 

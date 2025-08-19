@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import Experience from "../../Experience";
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+import { timeRemaining } from '../../Utils/timeRemaining';
 
 export default class ProgressText
 {
@@ -14,9 +15,13 @@ export default class ProgressText
         this.progress = this.experience.darmfestProgress
 
         this.size = 1
-        this.text = "" + Math.ceil(this.progress *100) +"%"
+        // this.text = "" + Math.ceil(this.progress *100) +"%"
+        this.text = "" + timeRemaining(this.config.darmfestDate, Date.now(), { maxUnits: 2, allowPast: true }) + ""
+        console.log(this.text)
+        console.log(this.config.darmfestDate)
+        console.log(Date.now())
 
-        this.brightness = 0
+        this.brightness = 0.1
         this.flickerIntensity = 0.1 *this.experience.goWildAmount
         this.opacityFlickerIntensity = 1 *this.experience.goWildAmount
         this.movingIntensity = 1 *this.experience.goWildAmount
