@@ -22,7 +22,7 @@ export default class Config
          * World Settings
          */
         this.sceneDepth = 200               // Depth of the synthwave scene
-        this.particleCount = 10000          // Number of particles in the scene
+        this.particleCount = 10000         // Number of particles in the scene
         this.sunBrightness = 0.5            // Brightness of the sun
     }
 

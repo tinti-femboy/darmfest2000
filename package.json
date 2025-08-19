@@ -1,7 +1,7 @@
 {
-  "name": "threejs-journey-exercise",
+  "name": "darmfest2000-site",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "lil-gui": "^0.20.0",
-    "three": "^0.174.0"
+    "three": "^0.174.0",
+    "@dimforge/rapier3d-compat": "^0.10.0"
   }
 }

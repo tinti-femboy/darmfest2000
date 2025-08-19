@@ -93,7 +93,6 @@ export default class ProgressText
         if(this.sizes.aspectRatio < 1.8) // Offset Z to make sure text fits on screen, if aspect ratio is less than 1.8 text would be cropped
         {
             this.Zoffset = (1 - this.sizes.aspectRatio / 1.8) ** 2 * 120 // Adjust the Z offset based on aspect ratio
-            console.log(this.Zoffset)
             this.position.z = -20 - this.Zoffset
         } else
         {

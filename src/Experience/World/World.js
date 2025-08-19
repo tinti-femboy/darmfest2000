@@ -9,6 +9,7 @@ import Mountains from './Objects/Mountains';
 import TitleText from './Objects/TitleText';
 import SubitleText from './Objects/SubtitleText';
 import ProgressText from './Objects/ProgressText';
+import Physics from './Physics';
 
 export default class World
 {
@@ -29,6 +30,8 @@ export default class World
             this.titleText = new TitleText()
             this.subtitleText = new SubitleText()
             this.progressText = new ProgressText()
+
+            this.physics = new Physics() // Initialize physics after all objects are set up
         })
 
 
@@ -72,7 +75,10 @@ export default class World
         {
             this.progressText.update()
         }
-
+        if(this.physics)
+        {
+            this.physics.update()
+        }   
 
 
     }
