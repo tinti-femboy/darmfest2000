@@ -58,7 +58,7 @@ export default class Camera
     {
 
         const getScaledPosition = (x, y) => {
-            const scaledX = (x / window.innerWidth)* -1;
+            const scaledX = (x / window.innerWidth)* -1 +0.5; //add 0.5 to the 0-1 value to make x center at 0
             const scaledY = (y / window.innerHeight) + 5;
             
             // Update the position of the instance
@@ -100,4 +100,5 @@ export default class Camera
             this.instance.position.y += Math.random()*0.2 *this.experience.goWildAmount
         }
     }
+
 }
