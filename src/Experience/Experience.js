@@ -39,9 +39,11 @@ export default class Experience
         let timeFromCountdownstart = (3288149569 - timeTillDarmfest)
 
         this.darmfestProgress = timeFromCountdownstart / 3288140000
-        this.goWildAmount = Math.pow(this.darmfestProgress, 9)
-
-
+        // this.goWildAmount = Math.pow(this.darmfestProgress, 9)
+        // now, that the darmfest2000 has entered the past,
+        // we freeze the screen jittering.
+       this.goWildAmount = 0   
+        
         // Setup
         this.sizes = new Sizes()
 
@@ -124,4 +126,5 @@ export default class Experience
         }
         this.renderer.instance.dispose()
     }
+
 }
